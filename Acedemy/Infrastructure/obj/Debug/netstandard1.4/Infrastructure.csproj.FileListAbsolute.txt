@@ -1,0 +1,11 @@
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Infrastructure\bin\Debug\netstandard1.4\Infrastructure.deps.json
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Infrastructure\bin\Debug\netstandard1.4\Infrastructure.dll
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Infrastructure\bin\Debug\netstandard1.4\Infrastructure.pdb
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Infrastructure\bin\Debug\netstandard1.4\Common.dll
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Infrastructure\bin\Debug\netstandard1.4\Common.pdb
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Infrastructure\obj\Debug\netstandard1.4\Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Infrastructure\obj\Debug\netstandard1.4\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Infrastructure\obj\Debug\netstandard1.4\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Infrastructure\obj\Debug\netstandard1.4\Infrastructure.AssemblyInfo.cs
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Infrastructure\obj\Debug\netstandard1.4\Infrastructure.dll
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Infrastructure\obj\Debug\netstandard1.4\Infrastructure.pdb

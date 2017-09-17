@@ -1,0 +1,15 @@
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\bin\Debug\netcoreapp2.0\FrontEnd.deps.json
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\bin\Debug\netcoreapp2.0\FrontEnd.runtimeconfig.json
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\bin\Debug\netcoreapp2.0\FrontEnd.runtimeconfig.dev.json
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\bin\Debug\netcoreapp2.0\FrontEnd.dll
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\bin\Debug\netcoreapp2.0\FrontEnd.pdb
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\bin\Debug\netcoreapp2.0\Common.dll
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\bin\Debug\netcoreapp2.0\Infrastructure.dll
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\bin\Debug\netcoreapp2.0\Infrastructure.pdb
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\bin\Debug\netcoreapp2.0\Common.pdb
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.csprojResolveAssemblyReference.cache
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.AssemblyInfoInputs.cache
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.AssemblyInfo.cs
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.dll
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\FrontEnd\obj\Debug\netcoreapp2.0\FrontEnd.pdb

@@ -15,8 +15,8 @@ namespace Common.Authentication
         public static string CreateSignedToken(Dictionary<string,object> payload, string secretKey)
         {
             var secretBytes = GetByteSecret(secretKey);
-
-            return JWT.Encode(payload, secretBytes, JwsAlgorithm.ES512);
+           
+            return JWT.Encode(payload, secretBytes, JwsAlgorithm.HS256);
         }
 
         public static string DecodeSignedToken(string signedToken, string secretKey)
