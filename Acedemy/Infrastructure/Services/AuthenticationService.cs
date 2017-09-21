@@ -1,4 +1,6 @@
 ﻿using Common.Authentication;
+using Infrastructure.Exceptions;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,25 +10,33 @@ namespace Infrastructure.Services
 {
     public class AuthenticationService : IAuthenticationService
     {
+        private readonly TimeSpan _tokenValidity;
+
+        public AuthenticationService(TimeSpan tokenValidity)
+        {
+            _tokenValidity = tokenValidity;
+        }
+
         private const string SECRET = "{EFB5A17E-0621-4C98-8B7B-B51796C9F230}";
 
-        public bool VerifyAction(string signedToken, string controller, string action)
+        private struct Payload
         {
-            try
-            {
-                signedToken = signedToken.Replace("Bearer ", string.Empty);
+            [JsonProperty("username")]
+            public string Username { get; set; }
+            [JsonProperty("loginDate")]
+            public DateTime LoginDate { get; set; }
+        }
 
-                var token = JWTHelper.DecodeSignedToken(signedToken, signedToken);
+        public void VerifyAction(string signedToken, string controller, string action)
+        {
+            signedToken = signedToken.Replace("Bearer ", string.Empty);
 
-                //TODO: Add more verification
+            var rawPayload = JWTHelper.DecodeSignedToken(signedToken, SECRET);
 
+            var payload = JsonConvert.DeserializeObject<Payload>(rawPayload);
 
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
+            if (DateTime.UtcNow.Subtract(payload.LoginDate) > _tokenValidity)
+                throw new InvalidTokenException("Expired Token");
         }
 
         public string LoginUser(string username, string password)

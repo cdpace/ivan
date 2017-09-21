@@ -23,7 +23,10 @@ namespace FrontEnd
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddTransient<IAuthenticationService, AuthenticationService>();
+            services.AddTransient<IAuthenticationService, AuthenticationService>((serviceProvider) =>
+            {
+                return new AuthenticationService(TimeSpan.FromMinutes(1));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

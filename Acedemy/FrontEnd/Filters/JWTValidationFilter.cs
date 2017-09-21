@@ -1,6 +1,9 @@
-﻿using Infrastructure.Services;
+﻿using Infrastructure.Exceptions;
+using Infrastructure.Services;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http;
+using System;
 using IAuthService = Infrastructure.Services.IAuthenticationService;
 
 namespace FrontEnd.Filters
@@ -11,7 +14,7 @@ namespace FrontEnd.Filters
 
         public JWTValidationFilter()
         {
-            AuthService = new AuthenticationService();
+            AuthService = new AuthenticationService(TimeSpan.FromMinutes(1));
         }
 
         public override void OnActionExecuting(ActionExecutingContext context)
@@ -20,15 +23,16 @@ namespace FrontEnd.Filters
             
             if (authHeader.HasValue && !string.IsNullOrWhiteSpace(authHeader.Value))
             {
-                var token = AuthService.VerifyAction(authHeader.Value, string.Empty, string.Empty);
+                try
+                {
+                    AuthService.VerifyAction(authHeader.Value, string.Empty, string.Empty);
+                }
+                catch (InvalidTokenException)
+                {
+                    context.Result = new StatusCodeResult(401);
+                }
             }
-            else
-            {
-                
-            }
-
-
-
+            
         }
     }
 }
