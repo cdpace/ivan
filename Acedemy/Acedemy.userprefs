@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{AE24EF2E-3B8B-42BE-9BD3-63DF5AF34EA1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Acedemy Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Services/AuthenticationService.cs">
     <Files>
-      <File FileName="Infrastructure/Services/AuthenticationService.cs" Line="53" Column="1" />
+      <File FileName="Infrastructure/Services/AuthenticationService.cs" Line="27" Column="52" />
       <File FileName="Common/Authentication/JWTHelper.cs" Line="20" Column="1" />
       <File FileName="Acedemy Status" />
     </Files>
