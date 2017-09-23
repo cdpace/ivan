@@ -1,0 +1,9 @@
+/Users/christianpace/ivan/Acedemy/Models/bin/Debug/netstandard1.4/Models.deps.json
+/Users/christianpace/ivan/Acedemy/Models/bin/Debug/netstandard1.4/Models.dll
+/Users/christianpace/ivan/Acedemy/Models/bin/Debug/netstandard1.4/Models.pdb
+/Users/christianpace/ivan/Acedemy/Models/obj/Debug/netstandard1.4/Models.csprojResolveAssemblyReference.cache
+/Users/christianpace/ivan/Acedemy/Models/obj/Debug/netstandard1.4/Models.csproj.CoreCompileInputs.cache
+/Users/christianpace/ivan/Acedemy/Models/obj/Debug/netstandard1.4/Models.AssemblyInfoInputs.cache
+/Users/christianpace/ivan/Acedemy/Models/obj/Debug/netstandard1.4/Models.AssemblyInfo.cs
+/Users/christianpace/ivan/Acedemy/Models/obj/Debug/netstandard1.4/Models.dll
+/Users/christianpace/ivan/Acedemy/Models/obj/Debug/netstandard1.4/Models.pdb
