@@ -1,16 +1,16 @@
 ﻿<Properties StartupConfiguration="{AE24EF2E-3B8B-42BE-9BD3-63DF5AF34EA1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Services/AuthenticationService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Api/Controllers/ValuesController.cs">
     <Files>
-      <File FileName="Infrastructure/Services/AuthenticationService.cs" Line="27" Column="52" />
+      <File FileName="Infrastructure/Services/AuthenticationService.cs" Line="37" Column="13" />
       <File FileName="Common/Authentication/JWTHelper.cs" Line="20" Column="1" />
-      <File FileName="Acedemy Status" />
+      <File FileName="Api/appsettings.json" Line="1" Column="1" />
+      <File FileName="Api/Startup.cs" Line="1" Column="1" />
+      <File FileName="Api/Controllers/ValuesController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/christianpace/ivan/Acedemy/Infrastructure/Services/AuthenticationService.cs" relfile="Infrastructure/Services/AuthenticationService.cs" line="43" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
