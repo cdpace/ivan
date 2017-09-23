@@ -723,7 +723,6 @@
       },
       "Common/1.0.0": {
         "dependencies": {
-          "NETStandard.Library": "1.6.1",
           "jose-jwt": "2.4.0"
         },
         "runtime": {

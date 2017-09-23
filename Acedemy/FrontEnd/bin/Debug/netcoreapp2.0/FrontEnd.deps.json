@@ -3818,7 +3818,6 @@
       },
       "Common/1.0.0": {
         "dependencies": {
-          "NETStandard.Library": "2.0.0",
           "jose-jwt": "2.4.0"
         },
         "runtime": {
@@ -3830,8 +3829,7 @@
       },
       "Infrastructure/1.0.0": {
         "dependencies": {
-          "Common": "1.0.0",
-          "NETStandard.Library": "2.0.0"
+          "Common": "1.0.0"
         },
         "runtime": {
           "Infrastructure.dll": {}
@@ -5791,7 +5789,7 @@
     "System.Runtime.Serialization.Json/4.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IvREi3CK+f5De0SiQQwv2fg9zJIUO8Om8DjAYPKJOjryfctEqbpjKESV2LjD7hVSWm3Q4/oTtVM751saQ+muyw==",
+      "sha512": "sha512-+7DIJhnKYgCzUgcLbVTtRQb2l1M0FP549XFlFkQM5lmNiUBl44AfNbx4bz61xA8PzLtlYwfmif4JJJW7MPPnjg==",
       "path": "system.runtime.serialization.json/4.0.2",
       "hashPath": "system.runtime.serialization.json.4.0.2.nupkg.sha512"
     },
