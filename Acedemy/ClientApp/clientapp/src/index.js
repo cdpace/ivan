@@ -24,17 +24,19 @@ function RenderRoutes(){
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
-ReactDOM.render((
+ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
-    <Header />
-        <BrowserRouter>
-            <div>
-                <Switch>
-                    {RenderRoutes()}
-                </Switch>
-            </div>
-        </BrowserRouter>
-    <Footer />
+        <div>
+        <Header />
+            <BrowserRouter>
+                <div>
+                    <Switch>
+                        {RenderRoutes()}
+                    </Switch>
+                </div>
+            </BrowserRouter>
+        <Footer />
+    </div>
     </Provider>
-), document.getElementById('root'));
+, document.getElementById('root'));
 registerServiceWorker();

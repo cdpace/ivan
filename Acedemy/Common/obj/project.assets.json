@@ -4325,10 +4325,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/christianpace/ivan/Acedemy/Common/Common.csproj",
+      "projectUniqueName": "/Users/christianpace/Desktop/Work/Acedemy/Common/Common.csproj",
       "projectName": "Common",
-      "projectPath": "/Users/christianpace/ivan/Acedemy/Common/Common.csproj",
-      "outputPath": "/Users/christianpace/ivan/Acedemy/Common/obj",
+      "projectPath": "/Users/christianpace/Desktop/Work/Acedemy/Common/Common.csproj",
+      "outputPath": "/Users/christianpace/Desktop/Work/Acedemy/Common/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"

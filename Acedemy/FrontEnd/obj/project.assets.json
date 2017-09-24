@@ -29089,10 +29089,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/christianpace/ivan/Acedemy/FrontEnd/FrontEnd.csproj",
+      "projectUniqueName": "/Users/christianpace/Desktop/Work/Acedemy/FrontEnd/FrontEnd.csproj",
       "projectName": "FrontEnd",
-      "projectPath": "/Users/christianpace/ivan/Acedemy/FrontEnd/FrontEnd.csproj",
-      "outputPath": "/Users/christianpace/ivan/Acedemy/FrontEnd/obj",
+      "projectPath": "/Users/christianpace/Desktop/Work/Acedemy/FrontEnd/FrontEnd.csproj",
+      "outputPath": "/Users/christianpace/Desktop/Work/Acedemy/FrontEnd/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -29100,8 +29100,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/christianpace/ivan/Acedemy/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/Users/christianpace/ivan/Acedemy/Infrastructure/Infrastructure.csproj"
+            "/Users/christianpace/Desktop/Work/Acedemy/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/Users/christianpace/Desktop/Work/Acedemy/Infrastructure/Infrastructure.csproj"
             }
           }
         }

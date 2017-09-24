@@ -4343,10 +4343,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/christianpace/ivan/Acedemy/Infrastructure/Infrastructure.csproj",
+      "projectUniqueName": "/Users/christianpace/Desktop/Work/Acedemy/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "/Users/christianpace/ivan/Acedemy/Infrastructure/Infrastructure.csproj",
-      "outputPath": "/Users/christianpace/ivan/Acedemy/Infrastructure/obj",
+      "projectPath": "/Users/christianpace/Desktop/Work/Acedemy/Infrastructure/Infrastructure.csproj",
+      "outputPath": "/Users/christianpace/Desktop/Work/Acedemy/Infrastructure/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"
@@ -4354,8 +4354,8 @@
       "frameworks": {
         "netstandard1.4": {
           "projectReferences": {
-            "/Users/christianpace/ivan/Acedemy/Common/Common.csproj": {
-              "projectPath": "/Users/christianpace/ivan/Acedemy/Common/Common.csproj"
+            "/Users/christianpace/Desktop/Work/Acedemy/Common/Common.csproj": {
+              "projectPath": "/Users/christianpace/Desktop/Work/Acedemy/Common/Common.csproj"
             }
           }
         }

@@ -3708,10 +3708,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/christianpace/ivan/Acedemy/Models/Models.csproj",
+      "projectUniqueName": "/Users/christianpace/Desktop/Work/Acedemy/Models/Models.csproj",
       "projectName": "Models",
-      "projectPath": "/Users/christianpace/ivan/Acedemy/Models/Models.csproj",
-      "outputPath": "/Users/christianpace/ivan/Acedemy/Models/obj",
+      "projectPath": "/Users/christianpace/Desktop/Work/Acedemy/Models/Models.csproj",
+      "outputPath": "/Users/christianpace/Desktop/Work/Acedemy/Models/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"
