@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{AE24EF2E-3B8B-42BE-9BD3-63DF5AF34EA1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Repositories/UserRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Services/AuthenticationService.cs">
     <Files>
       <File FileName="Api/Controllers/AuthenticationController.cs" Line="16" Column="35" />
       <File FileName="Infrastructure/Services/AuthenticationService.cs" Line="68" Column="16" />
       <File FileName="Infrastructure/Services/IAuthenticationService.cs" Line="9" Column="59" />
       <File FileName="Infrastructure/Repositories/IUserRepository.cs" Line="11" Column="2" />
-      <File FileName="Infrastructure/Repositories/UserRepository.cs" Line="33" Column="23" />
+      <File FileName="Infrastructure/Repositories/UserRepository.cs" Line="50" Column="54" />
       <File FileName="Api/Startup.cs" Line="26" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>

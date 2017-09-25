@@ -42,9 +42,12 @@ namespace Infrastructure.Services
                 throw new InvalidTokenException("Expired Token");
         }
 
-        public string LoginUser(string username, string password)
+        public async Task<string> LoginUser(string username, string password)
         {
-            //TODO: Verify Username/ Password against database
+            var isvalid = await _userRepository.ValidateUser(username, password);
+
+            if (!isvalid)
+                return string.Empty;
 
             //create jwt token
 
