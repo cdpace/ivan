@@ -6,6 +6,6 @@ namespace Infrastructure.Services
     {
         string LoginUser(string username, string password);
         void VerifyAction(string signedToken, string controller, string action);
-        void RegisterUser();
+        void RegisterUser(string username, string password);
     }
 }

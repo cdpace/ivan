@@ -5,16 +5,19 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Repositories;
 
 namespace Infrastructure.Services
 {
     public class AuthenticationService : IAuthenticationService
     {
         private readonly TimeSpan _tokenValidity;
+        private readonly IUserRepository _userRepository;
 
-        public AuthenticationService(TimeSpan tokenValidity)
+        public AuthenticationService(TimeSpan tokenValidity, IUserRepository userRepo)
         {
             _tokenValidity = tokenValidity;
+            _userRepository = userRepo;
         }
 
         private const string SECRET = "{EFB5A17E-0621-4C98-8B7B-B51796C9F230}";
@@ -55,6 +58,14 @@ namespace Infrastructure.Services
 
 
             return token;
+        }
+
+        public void RegisterUser(string username, string password)
+        {
+            _userRepository.CreateUser(new Models.Entities.User(){
+                Username = username,
+                Password = password
+            });
         }
     }
 }
