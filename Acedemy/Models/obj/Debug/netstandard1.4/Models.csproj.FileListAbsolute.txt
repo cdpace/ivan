@@ -7,3 +7,12 @@
 /Users/christianpace/ivan/Acedemy/Models/obj/Debug/netstandard1.4/Models.AssemblyInfo.cs
 /Users/christianpace/ivan/Acedemy/Models/obj/Debug/netstandard1.4/Models.dll
 /Users/christianpace/ivan/Acedemy/Models/obj/Debug/netstandard1.4/Models.pdb
+/Users/christianpace/Desktop/Work/Acedemy/Models/bin/Debug/netstandard1.4/Models.deps.json
+/Users/christianpace/Desktop/Work/Acedemy/Models/bin/Debug/netstandard1.4/Models.dll
+/Users/christianpace/Desktop/Work/Acedemy/Models/bin/Debug/netstandard1.4/Models.pdb
+/Users/christianpace/Desktop/Work/Acedemy/Models/obj/Debug/netstandard1.4/Models.csprojResolveAssemblyReference.cache
+/Users/christianpace/Desktop/Work/Acedemy/Models/obj/Debug/netstandard1.4/Models.csproj.CoreCompileInputs.cache
+/Users/christianpace/Desktop/Work/Acedemy/Models/obj/Debug/netstandard1.4/Models.AssemblyInfoInputs.cache
+/Users/christianpace/Desktop/Work/Acedemy/Models/obj/Debug/netstandard1.4/Models.AssemblyInfo.cs
+/Users/christianpace/Desktop/Work/Acedemy/Models/obj/Debug/netstandard1.4/Models.dll
+/Users/christianpace/Desktop/Work/Acedemy/Models/obj/Debug/netstandard1.4/Models.pdb

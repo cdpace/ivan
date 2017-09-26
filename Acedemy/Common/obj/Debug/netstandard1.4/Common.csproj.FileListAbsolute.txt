@@ -16,3 +16,12 @@ C:/Users/Christian/Desktop/Workspace/ivan/Acedemy/Common/obj/Debug/netstandard1.
 /Users/christianpace/ivan/Acedemy/Common/obj/Debug/netstandard1.4/Common.AssemblyInfo.cs
 /Users/christianpace/ivan/Acedemy/Common/obj/Debug/netstandard1.4/Common.dll
 /Users/christianpace/ivan/Acedemy/Common/obj/Debug/netstandard1.4/Common.pdb
+/Users/christianpace/Desktop/Work/Acedemy/Common/bin/Debug/netstandard1.4/Common.deps.json
+/Users/christianpace/Desktop/Work/Acedemy/Common/bin/Debug/netstandard1.4/Common.dll
+/Users/christianpace/Desktop/Work/Acedemy/Common/bin/Debug/netstandard1.4/Common.pdb
+/Users/christianpace/Desktop/Work/Acedemy/Common/obj/Debug/netstandard1.4/Common.csprojResolveAssemblyReference.cache
+/Users/christianpace/Desktop/Work/Acedemy/Common/obj/Debug/netstandard1.4/Common.csproj.CoreCompileInputs.cache
+/Users/christianpace/Desktop/Work/Acedemy/Common/obj/Debug/netstandard1.4/Common.AssemblyInfoInputs.cache
+/Users/christianpace/Desktop/Work/Acedemy/Common/obj/Debug/netstandard1.4/Common.AssemblyInfo.cs
+/Users/christianpace/Desktop/Work/Acedemy/Common/obj/Debug/netstandard1.4/Common.dll
+/Users/christianpace/Desktop/Work/Acedemy/Common/obj/Debug/netstandard1.4/Common.pdb

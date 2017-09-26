@@ -63,12 +63,24 @@ namespace Infrastructure.Services
             return token;
         }
 
-        public void RegisterUser(string username, string password)
+        public Enums.RegisterResult RegisterUser(string username, string password)
         {
-            _userRepository.CreateUser(new Models.Entities.User(){
-                Username = username,
-                Password = password
-            });
+            try
+            {
+                _userRepository.CreateUser(new Models.Entities.User()
+                {
+                    Username = username,
+                    Password = password
+                });
+
+                return Enums.RegisterResult.Registered;
+            }
+            catch (ObjectAlreadyExistsException ex)
+            {
+                //TODO: Add exception logging.
+
+                return Enums.RegisterResult.UserAlreadyExists;
+            }
         }
     }
 }

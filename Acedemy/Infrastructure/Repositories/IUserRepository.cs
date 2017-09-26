@@ -7,6 +7,6 @@ namespace Infrastructure.Repositories
     public interface IUserRepository
     {
         Task CreateUser(User user);
-        Task<bool> ValidateUser(string username, string password)
+        Task<bool> ValidateUser(string username, string password);
     }
 }

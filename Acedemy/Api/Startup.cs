@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Infrastructure.Repositories;
 using Infrastructure.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,7 +26,12 @@ namespace Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddSingleton<IAuthenticationService>(new AuthenticationService(TimeSpan.FromHours(1)));
+            services.AddSingleton<IConfiguration>((arg) => Configuration);
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddSingleton<IAuthenticationService>(
+                (IServiceProvider arg) =>
+                    new AuthenticationService(TimeSpan.FromHours(1), arg.GetService<IUserRepository>())
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

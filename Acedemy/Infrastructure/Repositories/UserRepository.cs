@@ -19,8 +19,10 @@ namespace Infrastructure.Repositories
             _config = config;
         }
 
-        protected string ConnectionString {
-            get{
+        protected string ConnectionString
+        {
+            get
+            {
                 return _config.GetConnectionString("databaseConnectionString");
             }
         }
@@ -29,7 +31,7 @@ namespace Infrastructure.Repositories
         {
             using (var connection = new MySqlConnection(ConnectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
 
                 var checkQuery = "SELECT 1 FROM users WHERE Username = @Username and Password = @Password";
 
@@ -48,6 +50,28 @@ namespace Infrastructure.Repositories
                 command.CommandText = query;
 
                 await command.ExecuteNonQueryAsync();
+            }
+        }
+
+        public async Task<bool> ValidateUser(string username, string password)
+        {
+            using (var connection = new MySqlConnection(ConnectionString))
+            {
+                await connection.OpenAsync();
+
+                var query = "SELECT 1 FROM users where Username = @Username and Password = @Password";
+
+                var command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Username", username);
+                command.Parameters.AddWithValue("@Password", Encrypt.SHA512(password));
+
+                var result = await command.ExecuteScalarAsync();
+
+                if (result == null || ((int)result) <= 0)
+                    return false;
+
+                return true;
+
             }
         }
     }
