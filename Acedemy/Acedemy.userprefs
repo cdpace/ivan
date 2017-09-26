@@ -7,7 +7,7 @@
       <File FileName="Models/ApiRequests/UserLoginRequest.cs" Line="4" Column="34" />
       <File FileName="Infrastructure/Repositories/UserRepository.cs" Line="26" Column="77" />
       <File FileName="Api/Program.cs" Line="26" Column="1" />
-      <File FileName="Api/appsettings.json" Line="16" Column="36" />
+      <File FileName="Api/appsettings.json" Line="16" Column="53" />
       <File FileName="Acedemy Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
