@@ -5,7 +5,7 @@
       <File FileName="Infrastructure/Services/IAuthenticationService.cs" Line="10" Column="28" />
       <File FileName="Infrastructure/Services/AuthenticationService.cs" Line="47" Column="1" />
       <File FileName="Models/ApiRequests/UserLoginRequest.cs" Line="4" Column="34" />
-      <File FileName="Infrastructure/Repositories/UserRepository.cs" Line="4" Column="30" />
+      <File FileName="Infrastructure/Repositories/UserRepository.cs" Line="4" Column="23" />
       <File FileName="Api/Program.cs" Line="26" Column="1" />
       <File FileName="Api/appsettings.json" Line="19" Column="1" />
     </Files>

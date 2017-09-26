@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "targets": {
     ".NETStandard,Version=v1.4": {
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -3703,53 +3703,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Christian\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/christianpace/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Christian\\Desktop\\Workspace\\ivan\\Acedemy\\Models\\Models.csproj",
+      "projectUniqueName": "/Users/christianpace/Desktop/Work/Acedemy/Models/Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\Christian\\Desktop\\Workspace\\ivan\\Acedemy\\Models\\Models.csproj",
-      "packagesPath": "C:\\Users\\Christian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Christian\\Desktop\\Workspace\\ivan\\Acedemy\\Models\\obj\\",
+      "projectPath": "/Users/christianpace/Desktop/Work/Acedemy/Models/Models.csproj",
+      "outputPath": "/Users/christianpace/Desktop/Work/Acedemy/Models/obj",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
-      "configFilePaths": [
-        "C:\\Users\\Christian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-      ],
       "originalTargetFrameworks": [
         "netstandard1.4"
       ],
-      "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
-      },
       "frameworks": {
         "netstandard1.4": {
           "projectReferences": {}
         }
-      },
-      "warningProperties": {
-        "warnAsError": [
-          "NU1605"
-        ]
       }
     },
     "frameworks": {
       "netstandard1.4": {
         "dependencies": {
           "NETStandard.Library": {
+            "suppressParent": "All",
             "target": "Package",
-            "version": "1.6.1",
-            "autoReferenced": true
+            "version": "1.6.1"
           }
         }
       }

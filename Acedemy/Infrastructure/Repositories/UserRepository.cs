@@ -7,6 +7,7 @@ using Dapper;
 using PixlFox.PasswordHash;
 using Infrastructure.Exceptions;
 using Pomelo.Data.MySql;
+using System.Text;
 
 namespace Infrastructure.Repositories
 {
@@ -35,12 +36,15 @@ namespace Infrastructure.Repositories
 
                 var checkQuery = "SELECT 1 FROM users WHERE Username = @Username and Password = @Password";
 
-                var query = "INSERT INTO `acedemy`.`Users`(`Username`,`Password`,`Firstname`,`Lastname`)" +
+                var query = "INSERT INTO users (`Username`,`Password`,`Firstname`,`Lastname`)" +
                     "VALUES (@Username,@Password,@Firstname,@Lastname);";
+
+                var passHash = PasswordHash.Generate(user.Password);
+                var pass = Encoding.UTF8.GetString(passHash.Hash);
 
                 var command = new MySqlCommand(checkQuery, connection);
                 command.Parameters.AddWithValue("@Username", user.Username);
-                command.Parameters.AddWithValue("@Password", PixlFox.PasswordHash.PasswordHash.Generate(user.Password));
+                command.Parameters.AddWithValue("@Password", pass);
 
                 var res = await command.ExecuteScalarAsync();
 
