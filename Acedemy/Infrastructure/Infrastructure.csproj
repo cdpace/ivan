@@ -19,5 +19,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.0.0" />
     <PackageReference Include="Dapper" Version="1.50.2" />
     <PackageReference Include="PasswordHash" Version="1.1.0" />
+    <PackageReference Include="System.Security.Permissions" Version="4.4.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
   </ItemGroup>
 </Project>
