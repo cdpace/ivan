@@ -1,12 +1,3 @@
-C:/Users/Christian/Desktop/Workspace/ivan/Acedemy/Common/bin/Debug/netstandard1.4/Common.deps.json
-C:/Users/Christian/Desktop/Workspace/ivan/Acedemy/Common/bin/Debug/netstandard1.4/Common.dll
-C:/Users/Christian/Desktop/Workspace/ivan/Acedemy/Common/obj/Debug/netstandard1.4/Common.csprojResolveAssemblyReference.cache
-C:/Users/Christian/Desktop/Workspace/ivan/Acedemy/Common/obj/Debug/netstandard1.4/Common.csproj.CoreCompileInputs.cache
-C:/Users/Christian/Desktop/Workspace/ivan/Acedemy/Common/obj/Debug/netstandard1.4/Common.AssemblyInfoInputs.cache
-C:/Users/Christian/Desktop/Workspace/ivan/Acedemy/Common/obj/Debug/netstandard1.4/Common.AssemblyInfo.cs
-C:/Users/Christian/Desktop/Workspace/ivan/Acedemy/Common/bin/Debug/netstandard1.4/Common.pdb
-C:/Users/Christian/Desktop/Workspace/ivan/Acedemy/Common/obj/Debug/netstandard1.4/Common.dll
-C:/Users/Christian/Desktop/Workspace/ivan/Acedemy/Common/obj/Debug/netstandard1.4/Common.pdb
 /Users/christianpace/ivan/Acedemy/Common/bin/Debug/netstandard1.4/Common.deps.json
 /Users/christianpace/ivan/Acedemy/Common/bin/Debug/netstandard1.4/Common.dll
 /Users/christianpace/ivan/Acedemy/Common/bin/Debug/netstandard1.4/Common.pdb
@@ -25,3 +16,12 @@ C:/Users/Christian/Desktop/Workspace/ivan/Acedemy/Common/obj/Debug/netstandard1.
 /Users/christianpace/Desktop/Work/Acedemy/Common/obj/Debug/netstandard1.4/Common.AssemblyInfo.cs
 /Users/christianpace/Desktop/Work/Acedemy/Common/obj/Debug/netstandard1.4/Common.dll
 /Users/christianpace/Desktop/Work/Acedemy/Common/obj/Debug/netstandard1.4/Common.pdb
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Common\bin\Debug\netstandard1.4\Common.deps.json
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Common\bin\Debug\netstandard1.4\Common.dll
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Common\bin\Debug\netstandard1.4\Common.pdb
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Common\obj\Debug\netstandard1.4\Common.csprojResolveAssemblyReference.cache
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Common\obj\Debug\netstandard1.4\Common.csproj.CoreCompileInputs.cache
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Common\obj\Debug\netstandard1.4\Common.AssemblyInfoInputs.cache
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Common\obj\Debug\netstandard1.4\Common.AssemblyInfo.cs
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Common\obj\Debug\netstandard1.4\Common.dll
+C:\Users\Christian\Desktop\Workspace\ivan\Acedemy\Common\obj\Debug\netstandard1.4\Common.pdb

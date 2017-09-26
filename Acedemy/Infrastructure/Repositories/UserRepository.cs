@@ -3,10 +3,10 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Models.Entities;
 using MySql;
-using MySql.Data.MySqlClient;
 using Dapper;
-using PasswordHash;
+using PixlFox.PasswordHash;
 using Infrastructure.Exceptions;
+using Pomelo.Data.MySql;
 
 namespace Infrastructure.Repositories
 {
@@ -40,7 +40,7 @@ namespace Infrastructure.Repositories
 
                 var command = new MySqlCommand(checkQuery, connection);
                 command.Parameters.AddWithValue("@Username", user.Username);
-                command.Parameters.AddWithValue("@Password", Encrypt.SHA512(user.Password));
+                command.Parameters.AddWithValue("@Password", PixlFox.PasswordHash.PasswordHash.Generate(user.Password));
 
                 var res = await command.ExecuteScalarAsync();
 
@@ -63,7 +63,7 @@ namespace Infrastructure.Repositories
 
                 var command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Username", username);
-                command.Parameters.AddWithValue("@Password", Encrypt.SHA512(password));
+                command.Parameters.AddWithValue("@Password", PixlFox.PasswordHash.PasswordHash.Generate(password));
 
                 var result = await command.ExecuteScalarAsync();
 
