@@ -1,10 +1,11 @@
 ﻿using System;
 namespace Models.User
 {
-    public class User
+    public class User : BaseEntity
     {
         public User()
         {
+
         }
 
         //Authentication Details
@@ -17,14 +18,11 @@ namespace Models.User
         public string Title { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public string AddressLine1 { get; set; }
-        public string AddressLine2 { get; set; }
-        public string Town { get; set; }
-        public string PostCode { get; set; }
-        public string Country { get; set; }
 
         public ushort PhoneCountryCode { get; set; }
         public int PhoneNumber { get; set; }
+
+        public Address Address { get; set; }
 
         public ushort MobileCountryCode { get; set; }
         public int MobileNumber { get; set; }
@@ -37,5 +35,7 @@ namespace Models.User
         public bool TermsAndConditions { get; set; }
         public bool DataProtectionAct { get; set; }
 
+        //Audit Fields
+        public DateTime DateCreated { get; set; }
     }
 }
