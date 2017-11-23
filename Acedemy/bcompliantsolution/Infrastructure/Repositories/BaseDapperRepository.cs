@@ -3,25 +3,32 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Models;
-using MySql.Data;
+using System.Data;
+using Dapper;
+using Dapper.Contrib.Extensions;
 
 namespace Infrastructure.Repositories
 {
-    public abstract class BaseMySqlRepository<T> : IRepository<T> where T: BaseEntity
+    public abstract class BaseDapperRepository<T> : IRepository<T> where T: BaseEntity
     {
         private readonly string _tableName;
+        private readonly string _connectionString;
 
-        //internal IDbConnection Connection { get; }
+        internal virtual IDbConnection Connection { get; }
 
-        public BaseMySqlRepository(string tableName)
+        public BaseDapperRepository(string tableName, string connectionString)
         {
             _tableName = tableName;
-
+            this._connectionString = connectionString;
         }
 
-        public Task Add(T entity)
+        public async Task Add(T entity)
         {
-            throw new NotImplementedException();
+            using (var connection = Connection)
+            {
+                connection.Open();
+                await connection.InsertAsync(entity);
+            }
         }
 
         public Task Delete(T entity)
