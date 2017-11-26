@@ -57,29 +57,49 @@ namespace Infrastructure.Repositories
                     await connection.DeleteAsync(entity);
                 }
                 else
-                    throw new ObjectNotFoundException("", Guid.NewGuid());
+                    throw new ObjectNotFoundException($"{typeof(T).Name} not found.", _session.CorrelationId);
 
             }
         }
 
         public Task<IEnumerable<T>> Find(Expression<Func<T, bool>> predicate)
         {
-            throw new NotImplementedException();
+            
         }
 
-        public Task<IEnumerable<T>> FindAll()
+        public async Task<IEnumerable<T>> FindAll()
         {
-            throw new NotImplementedException();
+            using(var connection = Connection)
+            {
+                connection.Open();
+
+                return await connection.GetAllAsync<T>();
+            }
         }
 
-        public Task<T> FindById(long id)
+        public async Task<T> FindById(long id)
         {
-            throw new NotImplementedException();
+            using(var connection = Connection)
+            {
+                connection.Open();
+
+                var entity = await connection.GetAsync<T>(id);
+
+                if(entity == null){
+                    throw new ObjectNotFoundException($"{typeof(T).Name} not found.", _session.CorrelationId);
+                }
+
+                return entity;
+            }
         }
 
-        public Task Update(T entity)
+        public async Task Update(T entity)
         {
-            throw new NotImplementedException();
+            using(var connection = Connection)
+            {
+                connection.Open();
+                await connection.UpdateAsync(entity);
+            }
         }
     }
 }

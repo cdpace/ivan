@@ -13,6 +13,6 @@ namespace Infrastructure.Repositories
         Task DeleteById(long id);
         Task<T> FindById(long id);
         Task<IEnumerable<T>> FindAll();
-        Task<IEnumerable<T>> Find(Expression<Func<T, bool>> predicate);
+        Task<IEnumerable<T>> Find(string query, object parameters);
     }
 }
