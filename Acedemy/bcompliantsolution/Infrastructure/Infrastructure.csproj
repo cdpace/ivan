@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Authentication\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="1.50.2" />
