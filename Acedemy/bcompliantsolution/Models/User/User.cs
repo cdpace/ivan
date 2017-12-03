@@ -22,7 +22,8 @@ namespace Models.User
         public ushort PhoneCountryCode { get; set; }
         public int PhoneNumber { get; set; }
 
-        public Address Address { get; set; }
+        public long? AddressId { get; set; }
+        //public Address Address { get; set; }
 
         public ushort MobileCountryCode { get; set; }
         public int MobileNumber { get; set; }

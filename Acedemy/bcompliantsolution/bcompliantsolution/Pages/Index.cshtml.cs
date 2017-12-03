@@ -14,15 +14,17 @@ namespace bcompliantsolution.Pages
     {
         public async Task OnGet()
         {
-            var connectionString = "Server=127.0.0.1:8889;Database=bcompliantsolutions;Uid=root;Pwd=root;";
+            var connectionString = "Server=localhost;Port=8889;Database=bcompliantsolutions;Uid=root;Pwd=root;";
             var sessionService = new SessionService();
 
             var userRepo = new MySqlDapperRepository<User>("users", connectionString, sessionService);
 
+
             await userRepo.Add(new User()
             {
                 Username = "cdpace",
-                Password = "test".GetHashCode().ToString()
+                Password = "test".GetHashCode().ToString(),
+                AddressId = null
             });
         }
     }
