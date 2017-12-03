@@ -13,9 +13,9 @@ namespace Infrastructure.Repositories
 {
     public abstract class BaseDapperRepository<T> : IRepository<T> where T: BaseEntity
     {
-        private readonly string _tableName;
-        private readonly string _connectionString;
-        private readonly ISession _session;
+        protected readonly string _tableName;
+        protected readonly string _connectionString;
+        protected readonly ISession _session;
 
         internal virtual IDbConnection Connection { get; }
 
@@ -62,11 +62,6 @@ namespace Infrastructure.Repositories
             }
         }
 
-        public Task<IEnumerable<T>> Find(Expression<Func<T, bool>> predicate)
-        {
-            
-        }
-
         public async Task<IEnumerable<T>> FindAll()
         {
             using(var connection = Connection)
@@ -99,6 +94,14 @@ namespace Infrastructure.Repositories
             {
                 connection.Open();
                 await connection.UpdateAsync(entity);
+            }
+        }
+
+        public async Task<IEnumerable<T>> Find(string query, object parameters)
+        {
+            using(var connection = Connection){
+                connection.Open();
+                return await connection.QueryAsync<T>(query, parameters);
             }
         }
     }
